@@ -6,7 +6,7 @@ import com.google.api.client.http.javanet.NetHttpTransport;
 import com.google.api.client.json.jackson.JacksonFactory;
 
 public class IdTokenVerifierAndParser {
-    private static final String GOOGLE_CLIENT_ID = "421743904981-25ga7mad6o2j8u9n0aqfldc7o7k3sadc.apps.googleusercontent.com";
+    private static final String GOOGLE_CLIENT_ID = "YOUR CLIENT ID HERE";
 
     public static GoogleIdToken.Payload getPayload (String tokenString) throws Exception {
 

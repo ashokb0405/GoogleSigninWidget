@@ -11,7 +11,7 @@
 
 <meta name="google-signin-scope" content="profile email">
 <meta name="google-signin-client_id"
-     content="421743904981-25ga7mad6o2j8u9n0aqfldc7o7k3sadc.apps.googleusercontent.com">
+     content="YOUR CLIENT ID HERE">
 
 <title>Servlet OAuth example</title>
 <style>
