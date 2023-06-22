@@ -29,4 +29,14 @@
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/LoginServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Iparse</display-name>
+    <servlet-name>Iparse</servlet-name>
+    <servlet-class>com.dl.Iparse</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Iparse</servlet-name>
+    <url-pattern>/Iparse</url-pattern>
+  </servlet-mapping>
 </web-app>
