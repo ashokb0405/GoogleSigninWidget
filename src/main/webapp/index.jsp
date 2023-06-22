@@ -7,13 +7,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://apis.google.com/js/platform.js"></script>
 
 <meta name="google-signin-scope" content="profile email">
 <meta name="google-signin-client_id"
      content="YOUR CLIENT ID HERE">
 
-<title>Servlet OAuth example</title>
 <style>
     body {
       font-family: Arial, sans-serif;
@@ -61,13 +60,24 @@
     input[type="submit"]:hover {
       background-color: #45a049;
     }
+    .login-link {
+  margin-top: 10px;
+  color: #666;
+  text-align: center;
+}
+
+.login-link a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
   </style>
 
 </head>
 <body>
-	<h2>Servlet OAuth example</h2>
-	<br>
-	 
   <div class="container">
     <h2>Login</h2>
     <form>
@@ -78,6 +88,7 @@
       <input type="password" id="password" name="password" required>
 
       <input type="submit" value="Login">
+     <p class="login-link">Create account   <a href="SignUpPage.jsp">Sign Up</a></p>
     </form>
   </div>
   <br/>
@@ -99,7 +110,7 @@
          //do not post all above info to the server because that is not secure.
          //just send the id_token
 
-         var redirectUrl = 'login';
+         var redirectUrl = 'index';
 
          //using jquery to post data dynamically
          var form = $('<form action="' + redirectUrl + '" method="post">' +
